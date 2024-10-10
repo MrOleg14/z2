@@ -58,8 +58,8 @@ int main() {
     std::inplace_merge(V.begin(), V.begin() + 2 * third, V.end());
 
     // Перегруппируем элементы
-    auto it = std::stable_partition(V.begin(), V.end(), isNegative);
-    std::stable_partition(it, V.end(), isZero);
+    // auto it = std::stable_partition(V.begin(), V.end(), isNegative);
+    // std::stable_partition(it, V.end(), isZero);
 
     std::cout << "result: ";
     for (const auto& val : V) {
